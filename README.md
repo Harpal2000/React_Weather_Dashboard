@@ -12,7 +12,7 @@ A responsive weather dashboard application built with React and Tailwind CSS. Th
 
 ## Screenshots
 
-![Weather Dashboard Screenshot](./public/appSS.png)
+![Weather Dashboard Screenshot](./src/assets/images/appSS.png)
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ A responsive weather dashboard application built with React and Tailwind CSS. Th
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/weather-dashboard.git
+    git clone https://github.com/Harpal2000/React_Weather_Dashboard.git
     cd weather-dashboard
     ```
 
@@ -38,7 +38,7 @@ A responsive weather dashboard application built with React and Tailwind CSS. Th
 3. Create a `.env` file in the root directory and add your OpenWeatherMap API key:
 
     ```
-    REACT_APP_WEATHER_API_KEY=your_api_key_here
+    const apiKey = your_api_key_here
     ```
 
 4. Start the development server:
