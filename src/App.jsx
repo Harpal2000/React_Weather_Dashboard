@@ -17,7 +17,7 @@ function App() {
         navigator.geolocation.getCurrentPosition(async (position) => {
           const lat = position.coords.latitude;
           const lon = position.coords.longitude;
-          const apiKey = 'fb0d9be033d9deb37814eb9956001d2c';
+          const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
           const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
 
           try {
@@ -40,7 +40,7 @@ function App() {
   }, [units]);
 
   const fetchWeatherData = async (city) => {
-    const apiKey = 'fb0d9be033d9deb37814eb9956001d2c';
+    const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
     try {
